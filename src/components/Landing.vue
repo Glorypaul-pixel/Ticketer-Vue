@@ -16,7 +16,7 @@
       <div class="hero-visual" aria-hidden>
         <div class="circle circle-1"></div>
         <div class="circle circle-2"></div>
-        <img src="/assets/hero-wave.svg" alt="wave" class="hero-wave" />
+        <img :src="heroWave" alt="wave" class="hero-wave" />
       </div>
     </div>
 
@@ -41,6 +41,6 @@
   </section>
 </template>
 
-<script>
-export default {};
+<script setup>
+import heroWave from "../assets/hero-wave.svg";
 </script>
